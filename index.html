@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Model Slayer · Looking Glass Holographic Quilts</title>
+<meta name="description" content="Draw Things → MiniMax H3 FL2VA → Looking Glass quilt 全流程作品集与管线文档">
+<style>
+  :root {
+    --ivory: #faf6ee; --ivory-deep: #f3ecdd; --gold: #b98a2f; --gold-soft: #d9b96a;
+    --ink: #3a3226; --ink-soft: #6b6152; --card: #fffdf8; --line: #e6dcc6;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--ivory); color: var(--ink); font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Segoe UI", sans-serif; line-height: 1.75; }
+  a { color: var(--gold); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  header { padding: 72px 0 40px; text-align: center; background: linear-gradient(180deg, var(--ivory-deep), var(--ivory)); border-bottom: 1px solid var(--line); }
+  header h1 { font-size: 44px; letter-spacing: 2px; font-weight: 800; }
+  header h1 span { color: var(--gold); }
+  header p { margin-top: 12px; color: var(--ink-soft); font-size: 16px; }
+  nav { margin-top: 22px; font-size: 14px; }
+  nav a { margin: 0 12px; }
+
+  section { padding: 56px 0; }
+  section + section { border-top: 1px solid var(--line); }
+  h2 { font-size: 28px; margin-bottom: 8px; }
+  h2 .en { color: var(--gold); font-size: 15px; font-weight: 600; letter-spacing: 1px; margin-left: 10px; }
+  .lead { color: var(--ink-soft); margin-bottom: 28px; }
+
+  .grid { display: grid; gap: 24px; }
+  .grid.two { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 760px) { .grid.two { grid-template-columns: 1fr; } }
+
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+  .card .body { padding: 18px 20px 20px; }
+  .card h3 { font-size: 18px; margin-bottom: 4px; }
+  .card .meta { font-size: 13px; color: var(--ink-soft); }
+
+  .lkg-embed { padding: 178.571% 0 0 0; position: relative; background: var(--ivory-deep); }
+  .lkg-embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
+  img.shot { width: 100%; display: block; }
+  .figure-note { font-size: 13px; color: var(--ink-soft); padding: 10px 20px 16px; }
+
+  video { width: 100%; display: block; background: #000; }
+
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 14px; }
+  th, td { border: 1px solid var(--line); padding: 8px 12px; text-align: left; }
+  th { background: var(--ivory-deep); font-weight: 600; }
+
+  details { margin: 12px 0; border: 1px solid var(--line); border-radius: 10px; background: var(--card); }
+  summary { cursor: pointer; padding: 12px 16px; font-weight: 600; color: var(--gold); }
+  details .inner { padding: 0 16px 16px; font-size: 13.5px; }
+  details p { margin-bottom: 10px; }
+  .prompt-label { font-weight: 700; color: var(--ink); }
+
+  ul.lessons { padding-left: 22px; }
+  ul.lessons li { margin-bottom: 12px; }
+
+  footer { padding: 36px 0 56px; text-align: center; color: var(--ink-soft); font-size: 13px; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>3D Model <span>Slayer</span></h1>
+    <p>Draw Things 生图 → MiniMax H3 FL2VA 视频 → Looking Glass 全息 quilt · 作品集与管线文档</p>
+    <nav>
+      <a href="#gallery">全息画廊</a><a href="#videos01">本次生图</a><a href="#pipeline">管线文档</a><a href="#lessons">踩坑记录</a><a href="https://github.com/Jup33Q/3d-model-slayer">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<section id="gallery">
+  <div class="wrap">
+    <h2>全息画廊<span class="en">HOLOGRAPHIC GALLERY</span></h2>
+    <p class="lead">托管在 Looking Glass Blocks 的可交互 quilt,浏览器里直接拖动/摇头预览;在 LKG 设备上打开即为裸眼 3D。</p>
+    <div class="grid two">
+
+      <div class="card">
+        <div class="lkg-embed"><iframe src="https://blocks.glass/embed/52ea3149-65ab-415d-ac7e-df1603305ff0" allow="autoplay; encrypted-media; xr-spatial-tracking; accelerometer; gyroscope; magnetometer" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" loading="lazy"></iframe></div>
+        <div class="body">
+          <h3>白丝少女 · 序列重置</h3>
+          <p class="meta">2026-10-03 · H3 FL2VA 56 帧 · 水彩穆夏 → 写实连裤袜 · 7×8 时间帧 quilt (LKG Go)</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="lkg-embed"><iframe src="https://blocks.glass/embed/350a09e9-7741-4009-b651-98095040906f" allow="autoplay; encrypted-media; xr-spatial-tracking; accelerometer; gyroscope; magnetometer" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" loading="lazy"></iframe></div>
+        <div class="body">
+          <h3>水墨白丝少女</h3>
+          <p class="meta">2026-10-02 · 首尾帧管线方向锁与深度融合 · 7×8 quilt (LKG Go)</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="lkg-embed"><iframe src="https://blocks.glass/embed/ba73bd3c-1478-4bfc-a3a7-adad4a550548" allow="autoplay; encrypted-media; xr-spatial-tracking; accelerometer; gyroscope; magnetometer" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" loading="lazy"></iframe></div>
+        <div class="body">
+          <h3>蒸汽朋克塔奇克马 · 彩铅版</h3>
+          <p class="meta">2026-10-02 · 彩铅风格化重绘管线 · 56 帧</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="lkg-embed"><iframe src="https://blocks.glass/embed/756e18f4-901d-4e37-a407-a2b00585d717" allow="autoplay; encrypted-media; xr-spatial-tracking; accelerometer; gyroscope; magnetometer" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" execution-while-out-of-viewport="true" execution-while-not-rendered="true" loading="lazy"></iframe></div>
+        <div class="body">
+          <h3>蒸汽朋克塔奇克马 · 写实版</h3>
+          <p class="meta">2026-10-02 · 镜像端点自然插值 · 124 帧</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="videos01">
+  <div class="wrap">
+    <h2>本次生图 · 白丝少女序列重置<span class="en">VIDEOS/01 RESET</span></h2>
+    <p class="lead">90 帧旧序列的首尾帧重绘:首帧水彩动漫+穆夏装饰(静),尾帧写实照片+白裤袜(动),H3 在中间插值出「穿衣+画风渐变」的 2.3 秒。</p>
+
+    <div class="grid two">
+      <div class="card">
+        <img class="shot" src="assets/b1-first-frame.png" alt="首帧定稿:水彩动漫+穆夏光环,少女赤足坐凳">
+        <div class="figure-note">首帧定稿 B1 · 1152×2048 · Qwen Image 2.1 四槽位板(彩图 32 / 深度 45 / 纸纹 7 / 穆夏 12)</div>
+      </div>
+      <div class="card">
+        <img class="shot" src="assets/b2-last-frame.png" alt="尾帧定稿:写实照片,左腿白裤袜穿好">
+        <div class="figure-note">尾帧定稿 B2 · 1152×2048 · 两槽位板(写实风格 30 / 深度 50)+ Opaque Pantyhose & Ricklistic LoRA</div>
+      </div>
+    </div>
+
+    <div class="grid two" style="margin-top:24px;">
+      <div class="card">
+        <video src="assets/video-56f.mp4" autoplay loop muted playsinline controls></video>
+        <div class="figure-note">H3 FL2VA 56 帧验证版(≈2.3s @24fps)· 一发通过</div>
+      </div>
+      <div class="card">
+        <a href="assets/quilt-qs7x8a0.56.jpg"><img class="shot" src="assets/quilt-qs7x8a0.56.jpg" alt="7x8 时间帧 quilt"></a>
+        <div class="figure-note">quilt 成品 4032×8192(7×8=56 格,行优先时间序)· 点开看全尺寸</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pipeline">
+  <div class="wrap">
+    <h2>管线文档<span class="en">PIPELINE</span></h2>
+    <p class="lead">完整可复跑配方。深度工具:DA3Depth-ShaderEdit(2.5D 重投影);首帧 yaw −5° / 尾帧 yaw +5°,配成 10° 视差弧。</p>
+
+    <div class="card"><div class="body">
+      <h3>Stage B1 · 首帧(水彩动漫 + 穆夏溶图)</h3>
+      <table>
+        <tr><th>槽位</th><th>参考图</th><th>权重</th><th>角色</th></tr>
+        <tr><td>1</td><td>首帧彩图(yaw −5° 重投影)</td><td>32</td><td>构图+色彩</td></tr>
+        <tr><td>2</td><td>DA3 深度图(同参)</td><td>45</td><td>几何/视差</td></tr>
+        <tr><td>3</td><td>水彩纸纹(Animagine XL)</td><td>7</td><td>笔触 ONLY</td></tr>
+        <tr><td>4</td><td>穆夏风格图(flux klein2)</td><td>12</td><td>风格(金线/光环)</td></tr>
+      </table>
+      <p class="meta">Qwen Image 2.1 (Generation) · Steps 25–28 · Guidance 4.0 · Euler</p>
+      <details><summary>正向 / 负向提示词全文</summary><div class="inner">
+        <p><span class="prompt-label">正向:</span>Image 1 is the composition and color reference — keep the same medium shot, camera angle and seated pose. Image 2 is the depth map geometry reference — the final composition and layered depth follow the depth map exactly, including its rotation and shift; do not flatten the layering. Image 3 provides the watercolor paper texture and brushwork grain only. Image 4 sets the Art Nouveau painting style — flowing golden contour lines, a warm golden halo, decorative elegance; apply this style to the whole painting. Repaint: a gentle girl with long honey-brown hair and soft green eyes, wearing a white sailor-collar long dress with a navy blue neckerchief, sits quietly on a tall wooden stool. Exactly two legs, both bare feet resting flat and naturally on the floor, legs together and uncrossed; exactly two hands — one resting on her lap, the other on the stool edge; head slightly tilted down with a quiet shy expression. Painted as traditional watercolor and gouache on rough cold-press cotton paper: loose visible brushstrokes, pigment granulation, wet-on-wet bleeds and blooming edges in the warm background, dry-brush texture on the dress folds, flowing Art Nouveau contour lines woven through her hair, a soft golden halo behind her head. Strong depth layering for parallax: the girl and stool in the midground with the richest brush detail, the foreground floor dissolving into broad pale washes toward the bottom of the frame, the background as soft atmospheric haze with drifting dust and gentle bokeh, warm golden rim light separating her hair and shoulders from the background. Warm ivory and antique gold palette, soft diffused lighting, high detail, no text.</p>
+        <p><span class="prompt-label">负向:</span>lowres, bad anatomy, extra limbs, extra legs, extra feet, extra fingers, deformed hands, crossed legs, smooth digital airbrush, cel shading, flat vector look, 3d render, overly clean, plastic skin, blurry subject, flat lighting, flat depth, text, watermark, signature</p>
+      </div></details>
+    </div></div>
+
+    <div class="card" style="margin-top:20px;"><div class="body">
+      <h3>Stage B2 · 尾帧(写实照片 · 静态「已穿好」)</h3>
+      <table>
+        <tr><th>槽位</th><th>参考图</th><th>权重</th><th>角色</th></tr>
+        <tr><td>1</td><td>尾帧彩图(yaw +5° 重投影)</td><td>30</td><td>写实风格+色彩 ONLY</td></tr>
+        <tr><td>2</td><td>DA3 深度图(同参)</td><td>50</td><td>几何/视差/方向锚</td></tr>
+      </table>
+      <p class="meta">Qwen Image 2.1 (Generation) · Steps 25–28 · Guidance 4.0 · Euler · LoRA: Opaque Pantyhose @0.8 + Ricklistic @0.8</p>
+      <details><summary>正向 / 负向提示词全文</summary><div class="inner">
+        <p><span class="prompt-label">正向:</span>Image 1 is the realistic photographic style and color reference — warm ivory palette, soft diffused studio lighting, natural photo grain; take this look only, do not copy its composition. Image 2 is the depth map geometry reference — the final composition and layered depth follow the depth map exactly, including its rotation and shift; do not flatten the layering. Repaint as a realistic photograph: a gentle girl with long honey-brown hair and soft green eyes, wearing a white sailor-collar long dress with a navy blue neckerchief, sits on a tall wooden stool. Her LEFT leg toward the left side of the image is lifted and bent, already wearing sheer white pantyhose with a smooth clean fabric surface, toes softly pointed; her right foot stays bare and rests flat on the wooden floor, fully visible in the lower right area of the frame; one hand rests gently on her left thigh, the other grips the stool edge; she looks toward the viewer with a calm soft expression. Strong depth layering for parallax: tack-sharp focus on the girl, the foreground floor softly blurred toward the bottom of the frame, a warm bright studio background with shallow depth of field, drifting dust particles and large soft golden bokeh far behind her, warm rim light outlining her hair and shoulders. Natural skin texture, subtle silk sheen on the pantyhose, 85mm lens look, realistic, high detail, no text.</p>
+        <p><span class="prompt-label">负向:</span>lowres, bad anatomy, extra limbs, extra legs, extra feet, extra fingers, deformed hands, deformed feet, melted foot, loose dangling fabric, bunched cloth, crossed legs, knee-high socks, ankle socks, both feet bare, right foot in pantyhose, both legs fully dressed, anime, illustration, cel shading, 2d, flat colors, 3d render, plastic skin, blurry subject, flat lighting, flat depth, text, watermark, signature</p>
+      </div></details>
+    </div></div>
+
+    <div class="card" style="margin-top:20px;"><div class="body">
+      <h3>Stage C · MiniMax H3 FL2VA 视频(56 帧验证版)</h3>
+      <table>
+        <tr><th>项</th><th>值</th></tr>
+        <tr><td>模式</td><td>Edit / FL2VA(Text-to-Video 会静默忽略参考图)</td></tr>
+        <tr><td>规格</td><td>576×1024 · 56 帧 ≈2.3s @24fps</td></tr>
+        <tr><td>采样</td><td>Steps 4 + H3 Turbo LoRA @44% · DDIM Trailing · Shift 12 · Audio Shift 3 · Guidance 1.0 · TeaCache OFF</td></tr>
+      </table>
+      <details><summary>六段式提示词全文</summary><div class="inner">
+        <p>Style contract: the clip begins as a warm ivory watercolor-and-gouache anime painting — soft paper grain, loose brushstrokes, a golden Art Nouveau halo behind the girl's head — and smoothly becomes a realistic photograph by the end; the same girl, the same white sailor-collar dress with navy neckerchief, the same tall wooden stool and the same warm studio background stay consistent the whole time.<br>
+        [0s-0.7s] She sits quietly on the tall wooden stool, both bare feet resting together on the floor, head slightly tilted down, almost still — only her hair tips and the watercolor background washes breathe faintly.<br>
+        [0.7s-1.4s] She gently lifts and bends her LEFT leg forward, sliding one hand onto her left thigh; her right foot stays planted flat on the floor, uncrossed.<br>
+        [1.4s-2.3s] A sheer white pantyhose is drawn up along her raised left leg, the fabric becoming visible progressively from ankle to thigh, her toes softly pointed; meanwhile the watercolor texture gradually gives way to photographic realism; she raises her eyes toward the viewer with a calm soft expression.<br>
+        Camera: the camera holds a steady medium shot with no cuts; the viewpoint drifts only very slightly along the natural arc between the two endpoint frames — she only appears to shift because of this subtle viewpoint drift, she does not slide across the floor.<br>
+        Audio: quiet warm room tone throughout; a soft fabric rustle begins at 1.2s as the pantyhose is drawn up; no music, no voices.<br>
+        Text: no text, no subtitles, no watermark, no logo.<br>
+        Negative: no cuts, no dissolves, no scene change, no motion blur, no teleporting, no extra limbs, no flickering, no objects popping in.</p>
+      </div></details>
+    </div></div>
+  </div>
+</section>
+
+<section id="lessons">
+  <div class="wrap">
+    <h2>踩坑记录<span class="en">LESSONS</span></h2>
+    <ul class="lessons">
+      <li><strong>动态参考图的「布料团」是污染源</strong>:模型把参考图里手攥的袜口布料抄进来后,脚/布边界算不明白 → 幽灵布、糊脚。静态「已穿好」端点才是 FL2VA 的稳定答案,「穿」的动作交给视频插值。</li>
+      <li><strong>Generation 参考模式不是真扩图</strong>:想给缺脚图向下补脚,高权重参考下要么整张重绘崩坏、要么只加灰边。补内容要用真 inpaint/outpaint 工具。</li>
+      <li><strong>动漫底图 → 写实+换装的可复用配方</strong>:Qwen 2.1 + Opaque Pantyhose @0.8 + Ricklistic @0.8 + 姿势参考 45 + 写实溶图 12;姿势底图用 illustrious 素材炉(ill-dressing-socks LoRA)产。</li>
+      <li><strong>时间帧平铺 quilt ≠ 真视角立体</strong>:7×8 时间帧 quilt 在 LKG 上是 wiggle 效果;真视角需对关键帧做 2.5D 角扫掠再拼标准 quilt。</li>
+      <li><strong>跨风格视频要写「斜坡」</strong>:水彩→写实的渐变与动作同步,写进时间轴每一段,模型才不会风格跳变。</li>
+      <li><strong>深度图补带要羽化</strong>:转 9:16 垂直补带用「边缘逐列中值→全局远/近值渐变+接缝羽化」,直接填纯色会出硬横杠被读成地平线。</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>3D Model Slayer · <a href="https://github.com/Jup33Q/3d-model-slayer">GitHub Repo</a> · 代码 MIT / 图像内容 CC0 · 全息托管 <a href="https://blocks.glass">Looking Glass Blocks</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
